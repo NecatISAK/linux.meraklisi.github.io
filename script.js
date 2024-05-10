@@ -1,24 +1,23 @@
 // Haber içeriğini göstermek için
 function showContent(haberId) {
-    // Haberin içeriğini al
-    const content = document.getElementById(haberId);
-
-    // İçerik div'ini göster
+    // Haberin içeriğini göster
+    const content = document.getElementById(haberId + '-content');
     content.style.display = 'block';
 
-    // Tüm diğer haber kartlarını gizle
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        if (card.id !== haberId) {
-            card.style.display = 'none';
-        }
-    });
+    // Haber kartlarını gizle
+    const haberlerSection = document.getElementById('haberler');
+    haberlerSection.style.display = 'none';
 }
 
-// Geri butonuna tıklanınca tüm haber kartlarını göster
+// Tüm haber kartlarını göstermek için
 function showAllContent() {
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        card.style.display = 'block';
+    // Tüm haber içeriklerini gizle
+    const contents = document.querySelectorAll('.card-content');
+    contents.forEach(content => {
+        content.style.display = 'none';
     });
+
+    // Haber kartlarını göster
+    const haberlerSection = document.getElementById('haberler');
+    haberlerSection.style.display = 'flex';
 }
