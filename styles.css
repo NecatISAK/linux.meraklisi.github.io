@@ -1,139 +1,73 @@
-/* Reset CSS */
-body, h1, h2, h3, p, a {
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    text-decoration: none;
+    background-color: #f8f8f8; /* Arkaplan rengi */
+    color: #333; /* Metin rengi */
 }
 
-/* Global Styles */
-body {
-    background-color: #f9f9f9;
-}
-
-header, nav, main, footer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #333; /* Başlık rengi */
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #000; /* Başlık arka plan rengi */
+    color: #fff; /* Başlık metin rengi */
     text-align: center;
+    padding: 1rem 0;
 }
 
 nav {
-    background-color: #0056b3;
+    background-color: #333; /* Menü arka plan rengi */
     text-align: center;
+    padding: 0.5rem 0;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 20px;
-    font-size: 1.2em;
+    color: #fff; /* Menü metin rengi */
+    text-decoration: none;
+    margin: 0 1rem;
 }
 
 main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-section {
-    width: 100%;
-    margin-bottom: 40px;
+    padding: 1rem;
 }
 
 .card {
-    background-color: #fff;
-    padding: 20px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    background-color: #fff; /* Kart arka plan rengi */
+    border: 1px solid #ddd; /* Kart kenarlık rengi */
+    border-radius: 5px; /* Kart kenarlık yuvarlaklık */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kart gölge efekti */
 }
 
 .card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 1rem;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.read-more {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s;
-}
-
-.read-more:hover {
-    background-color: #0056b3;
-}
-
-/* Haber içeriği stil */
-#haber-icerikleri {
-    display: none;
+.card .content {
+    flex: 1;
 }
 
 .card-content {
+    display: none;
+    padding: 1rem;
     background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.content-text {
-    font-size: 1.1em;
-    line-height: 1.6;
+.read-more {
+    color: blue;
+    text-decoration: none;
 }
 
-.back-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.back-button:hover {
-    background-color: #0056b3;
+/* Gösterim */
+.show {
+    display: block;
 }
