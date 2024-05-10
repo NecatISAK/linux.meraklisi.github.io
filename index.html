@@ -22,65 +22,28 @@
     <main>
         <section id="haberler">
             <h2>En Son Haberler</h2>
-            <div class="card">
+            <div class="card" id="haber1">
                 <img src="https://via.placeholder.com/300" alt="Haber Resmi">
                 <div class="content">
-                    <h3 class="title"><a href="#haber1">Linux Sürümü 5.15 Yayınlandı</a></h3>
+                    <h3 class="title"><a href="#" onclick="showContent('haber1')">Linux Sürümü 5.15 Yayınlandı</a></h3>
                     <p class="description">Linux çekirdeğinin en son sürümü, 5.15, birçok yeni özellik ve iyileştirme içeriyor.</p>
-                    <a href="#haber1" class="read-more">Devamını Oku</a>
+                    <a href="#" class="read-more" onclick="showContent('haber1')">Devamını Oku</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="haber2">
                 <img src="https://via.placeholder.com/300" alt="Haber Resmi">
                 <div class="content">
-                    <h3 class="title"><a href="#haber2">Linux Kullanıcıları İçin Yeni Güvenlik Güncellemeleri</a></h3>
+                    <h3 class="title"><a href="#" onclick="showContent('haber2')">Linux Kullanıcıları İçin Yeni Güvenlik Güncellemeleri</a></h3>
                     <p class="description">Sistem güvenliğini artırmak için Linux dağıtımlarına yönelik yeni güncellemeler yayınlandı.</p>
-                    <a href="#haber2" class="read-more">Devamını Oku</a>
+                    <a href="#" class="read-more" onclick="showContent('haber2')">Devamını Oku</a>
                 </div>
             </div>
-        </section>
-        <section id="dagitimlar">
-            <h2>Popüler Dağıtımlar</h2>
-            <div class="card">
-                <div class="content">
-                    <h3 class="title">Ubuntu</h3>
-                    <p class="description">Popüler ve kullanıcı dostu Linux dağıtımı.</p>
-                    <a href="#ubuntu" class="read-more">Detaylar</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h3 class="title">Arch Linux</h3>
-                    <p class="description">Tasarımı ve esnekliği ile bilinen dağıtım.</p>
-                    <a href="#arch-linux" class="read-more">Detaylar</a>
-                </div>
-            </div>
-        </section>
-        <section id="tutorials">
-            <h2>Linux Eğitimleri</h2>
-            <div class="card">
-                <div class="content">
-                    <h3 class="title">Temel Linux Komutları</h3>
-                    <p class="description">Linux terminalinde sıkça kullanılan temel komutların açıklamaları ve kullanımı.</p>
-                    <a href="#linux-komutlari" class="read-more">Detaylar</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h3 class="title">Linux Yükleme Rehberi</h3>
-                    <p class="description">Linux'u bilgisayarınıza nasıl kurabileceğinizi adım adım açıklayan rehber.</p>
-                    <a href="#linux-yukleme" class="read-more">Detaylar</a>
-                </div>
-            </div>
-        </section>
-        <section id="takim">
-            <h2>Linux Meraklısı Takımı</h2>
-            <p>Linux dünyasındaki gelişmeleri takip eden bir ekip, en son haberler ve güncellemeler hakkında size bilgi vermekten mutluluk duyar.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Linux Meraklısı</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
