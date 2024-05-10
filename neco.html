@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Meraklısı</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Linux Meraklısı</h1>
+    </header>
+    <nav>
+        <a href="#haberler">Haberler</a>
+        <a href="#dagitimlar">Dağıtımlar</a>
+        <a href="#tutorials">Eğitimler</a>
+        <a href="#takim">Takım</a>
+    </nav>
+    <main>
+        <section id="haberler">
+            <h2>En Son Haberler</h2>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Haber Resmi">
+                <div class="content">
+                    <h3 class="title"><a href="#haber1">Linux Sürümü 5.15 Yayınlandı</a></h3>
+                    <p class="description">Linux çekirdeğinin en son sürümü, 5.15, birçok yeni özellik ve iyileştirme içeriyor.</p>
+                    <a href="#haber1" class="read-more">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Haber Resmi">
+                <div class="content">
+                    <h3 class="title"><a href="#haber2">Linux Kullanıcıları İçin Yeni Güvenlik Güncellemeleri</a></h3>
+                    <p class="description">Sistem güvenliğini artırmak için Linux dağıtımlarına yönelik yeni güncellemeler yayınlandı.</p>
+                    <a href="#haber2" class="read-more">Devamını Oku</a>
+                </div>
+            </div>
+        </section>
+        <section id="dagitimlar">
+            <h2>Popüler Dağıtımlar</h2>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title">Ubuntu</h3>
+                    <p class="description">Popüler ve kullanıcı dostu Linux dağıtımı.</p>
+                    <a href="#ubuntu" class="read-more">Detaylar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title">Arch Linux</h3>
+                    <p class="description">Tasarımı ve esnekliği ile bilinen dağıtım.</p>
+                    <a href="#arch-linux" class="read-more">Detaylar</a>
+                </div>
+            </div>
+        </section>
+        <section id="tutorials">
+            <h2>Linux Eğitimleri</h2>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title">Temel Linux Komutları</h3>
+                    <p class="description">Linux terminalinde sıkça kullanılan temel komutların açıklamaları ve kullanımı.</p>
+                    <a href="#linux-komutlari" class="read-more">Detaylar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title">Linux Yükleme Rehberi</h3>
+                    <p class="description">Linux'u bilgisayarınıza nasıl kurabileceğinizi adım adım açıklayan rehber.</p>
+                    <a href="#linux-yukleme" class="read-more">Detaylar</a>
+                </div>
+            </div>
+        </section>
+        <section id="takim">
+            <h2>Linux Meraklısı Takımı</h2>
+            <p>Linux dünyasındaki gelişmeleri takip eden bir ekip, en son haberler ve güncellemeler hakkında size bilgi vermekten mutluluk duyar.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Linux Meraklısı</p>
+    </footer>
+</body>
+
+</html>
