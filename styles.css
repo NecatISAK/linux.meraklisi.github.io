@@ -75,10 +75,18 @@ main {
     color: #007bff; /* Devamını Oku metin rengi */
     text-decoration: none;
     transition: color 0.3s ease; /* Geçiş efekti */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Buton arka plan rengi */
+    border: 1px solid #007bff; /* Buton kenarlık rengi */
+    border-radius: 5px; /* Buton kenarlık yuvarlaklık */
+    text-align: center;
 }
 
 .read-more:hover {
-    color: #f8d400; /* Hover durumunda metin rengi */
+    color: #fff; /* Hover durumunda metin rengi */
+    background-color: #0056b3; /* Hover durumunda buton arka plan rengi */
+    border-color: #0056b3; /* Hover durumunda buton kenarlık rengi */
 }
 
 /* Gösterim */
