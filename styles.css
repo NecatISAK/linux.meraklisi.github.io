@@ -10,7 +10,11 @@ body {
 h1, h2, h3 {
     margin: 0;
     padding: 0;
-    color: #f8d400; /* Başlık rengi: Sarı */
+}
+
+h1 {
+    font-size: 2rem;
+    color: #f8d400; /* Başlık rengi */
 }
 
 header {
@@ -30,6 +34,11 @@ nav a {
     color: #fff; /* Menü metin rengi */
     text-decoration: none;
     margin: 0 1rem;
+    transition: color 0.3s ease; /* Geçiş efekti */
+}
+
+nav a:hover {
+    color: #f8d400; /* Hover durumunda metin rengi */
 }
 
 main {
@@ -65,6 +74,11 @@ main {
 .read-more {
     color: #007bff; /* Devamını Oku metin rengi */
     text-decoration: none;
+    transition: color 0.3s ease; /* Geçiş efekti */
+}
+
+.read-more:hover {
+    color: #f8d400; /* Hover durumunda metin rengi */
 }
 
 /* Gösterim */
