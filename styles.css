@@ -1,0 +1,73 @@
+/* Genel stil */
+body {
+    font-family: 'Concert One', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Arkaplan rengi */
+    color: #333; /* Metin rengi */
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #333; /* Başlık rengi */
+}
+
+header {
+    background-color: #333; /* Başlık arka plan rengi */
+    color: #fff; /* Başlık metin rengi */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #444; /* Menü arka plan rengi */
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fff; /* Menü metin rengi */
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 1rem;
+    background-color: #fff; /* Kart arka plan rengi */
+    border: 1px solid #ddd; /* Kart kenarlık rengi */
+    border-radius: 5px; /* Kart kenarlık yuvarlaklık */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kart gölge efekti */
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.card .content {
+    flex: 1;
+}
+
+.card-content {
+    display: none;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.read-more {
+    color: #007bff; /* Devamını Oku metin rengi */
+    text-decoration: none;
+}
+
+/* Gösterim */
+.show {
+    display: block;
+}
