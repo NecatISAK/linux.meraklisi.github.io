@@ -5,18 +5,35 @@ body {
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
+    line-height: 1.6;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header Stil */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
 
+/* Navigation Stil */
 nav {
     background-color: #444;
-    padding: 10px 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -24,26 +41,49 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    color: yellow;
+    background-color: #555;
 }
 
+/* Ana İçerik Stil */
 main {
     padding: 20px;
 }
 
 section {
-    margin-bottom: 20px;
-}
-
-/* Haberler Sayfası Stil */
-.haber {
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Görsel Stil */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Buton Stil */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
 
 /* Footer Stil */
@@ -51,24 +91,16 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
 }
 
-footer p {
-    margin: 0;
-}
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 5px;
+    }
 
-.read-more {
-    display: inline-block;
-    background-color: yellow;
-    color: black;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.read-more:hover {
-    background-color: black;
-    color: yellow;
+    .button {
+        padding: 8px 16px;
+    }
 }
