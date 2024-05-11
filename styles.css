@@ -1,10 +1,14 @@
 /* Genel stil */
 body {
-    font-family:'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000; /* Arkaplan rengi */
     color: #fff; /* Metin rengi */
+}
+.concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1, h2, h3 {
