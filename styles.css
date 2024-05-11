@@ -1,95 +1,74 @@
-/* Genel stil */
+/* Genel Stil */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8; /* Arkaplan rengi */
-    color: #333; /* Metin rengi */
-}
-
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-size: 2rem;
-    color: #f8d400; /* Başlık rengi */
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 header {
-    background-color: #333; /* Başlık arka plan rengi */
-    color: #fff; /* Başlık metin rengi */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     text-align: center;
-    padding: 1rem 0;
 }
 
 nav {
-    background-color: #444; /* Menü arka plan rengi */
+    background-color: #444;
+    padding: 10px 20px;
     text-align: center;
-    padding: 0.5rem 0;
 }
 
 nav a {
-    color: #fff; /* Menü metin rengi */
+    color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
-    transition: color 0.3s ease; /* Geçiş efekti */
+    margin: 0 10px;
 }
 
 nav a:hover {
-    color: #f8d400; /* Hover durumunda metin rengi */
+    color: yellow;
 }
 
 main {
-    padding: 1rem;
+    padding: 20px;
 }
 
-.card {
-    display: flex;
-    margin-bottom: 1rem;
-    background-color: #fff; /* Kart arka plan rengi */
-    border: 1px solid #ddd; /* Kart kenarlık rengi */
-    border-radius: 5px; /* Kart kenarlık yuvarlaklık */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kart gölge efekti */
+section {
+    margin-bottom: 20px;
 }
 
-.card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 1rem;
+/* Haberler Sayfası Stil */
+.haber {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card .content {
-    flex: 1;
+/* Footer Stil */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.card-content {
-    display: none;
-    padding: 1rem;
-    background-color: #f9f9f9;
+footer p {
+    margin: 0;
 }
 
 .read-more {
-    color: #007bff; /* Devamını Oku metin rengi */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Geçiş efekti */
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff; /* Buton arka plan rengi */
-    border: 1px solid #007bff; /* Buton kenarlık rengi */
-    border-radius: 5px; /* Buton kenarlık yuvarlaklık */
-    text-align: center;
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .read-more:hover {
-    color: #fff; /* Hover durumunda metin rengi */
-    background-color: #0056b3; /* Hover durumunda buton arka plan rengi */
-    border-color: #0056b3; /* Hover durumunda buton kenarlık rengi */
-}
-
-/* Gösterim */
-.show {
-    display: block;
+    background-color: black;
+    color: yellow;
 }
