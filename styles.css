@@ -24,7 +24,7 @@ h1, h2, h3 {
 /* Header Stil */
 header {
     background-color: #333;
-    color: #fff;
+    color: #f7ff03;
     padding: 20px;
     text-align: center;
 }
@@ -88,7 +88,7 @@ img {
 /* Footer Stil */
 footer {
     background-color: #333;
-    color: #fff;
+    color: ##969c03;
     text-align: center;
     padding: 20px;
 }
