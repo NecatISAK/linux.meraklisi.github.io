@@ -1,4 +1,3 @@
-/* Genel Stil */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -21,7 +20,6 @@ h1, h2, h3 {
     color: #333;
 }
 
-/* Header Stil */
 header {
     background-color: #333;
     color: #f7ff03;
@@ -29,7 +27,6 @@ header {
     text-align: center;
 }
 
-/* Navigation Stil */
 nav {
     background-color: #444;
     padding: 10px 0;
@@ -49,7 +46,6 @@ nav a:hover {
     background-color: #555;
 }
 
-/* Ana İçerik Stil */
 main {
     padding: 20px;
 }
@@ -62,14 +58,12 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Görsel Stil */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-/* Buton Stil */
 .button {
     display: inline-block;
     background-color: #ffc107;
@@ -85,7 +79,6 @@ img {
     background-color: #ffcd38;
 }
 
-/* Footer Stil */
 footer {
     background-color: #333;
     color: ##969c03;
@@ -93,7 +86,6 @@ footer {
     padding: 20px;
 }
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
     nav a {
         margin: 0 5px;
