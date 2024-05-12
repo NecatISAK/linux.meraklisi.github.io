@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
-    <link rel="icon" href="Linuxmeraklısı.png" type="image/x-icon" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linux Meraklısı</title>
     <link rel="stylesheet" href="styles.css">
@@ -11,51 +11,36 @@
 
 <body>
     <header>
-        <div class="container">
-            <h1>Linux Meraklısı</h1>
-            <nav>
-                <a href="haberler.html">Haberler</a>
-                <a href="dagitimlar.html">Dağıtımlar</a>
-                <a href="egitimler.html">Eğitimler</a>
-            </nav>
-        </div>
+        <h1>Linux Meraklısı</h1>
     </header>
-
+    <nav>
+        <a href="haberler.html">Haberler</a>
+        <a href="dagitimlar.html">Dağıtımlar</a>
+        <a href="egitimler.html">Eğitimler</a>
+    </nav>
     <main>
-        <section id="welcome">
-            <div class="container">
-                <h2>Linux Dünyasına Hoş Geldiniz!</h2>
-                <p>Linux ve Linux dağıtımları hakkında en güncel haberler, rehberler ve eğitimler için doğru adrestesiniz.</p>
-                <a href="#haberler" class="button">Haberlere Gözat</a>
+        <section id="haberler">
+            <h2>En Son Haberler</h2>
+            <div class="card">
+                <img src=linux.png width="300" height="300" alt="Haber Resmi">
+                <div class="content">
+                    <h3 class="title"><a></a> Linux Sürümü 6.8.9 Yayınlandı</a></h3>
+                    <p class="description">Linux çekirdeğinin en son sürümü, 6.8.9, birçok yeni özellik ve iyileştirme içeriyor.</p>
+                    <a href="haber1.html" class="button">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tuxsec.png" width="300" height="300" alt="Haber Resmi">
+                <div class="content">
+                    <h3 class="title"><a href="#">Linux Kullanıcıları İçin Yeni Güvenlik Güncellemeleri</a></h3>
+                    <p class="description">Sistem güvenliğini artırmak için Linux dağıtımlarına yönelik yeni güncellemeler yayınlandı.</p>
+                    <a href="#" class="button">Devamını Oku</a>
+                </div>
             </div>
         </section>
-
-      <section id="haberler">
-            <h2>En Son Haberler</h2>
-            <div class="container" id="haber1">
-                <img src="linux.png" width="300" height="300">
-                <div class="container">
-                    <h1 style="text-align:left">Linux Sürümü 6.8.9 Yayınlandı!</h1>
-                       <h2 style="text-align:left">Linux çekirdeğinin en son sürümü, 6.8.9, birçok yeni özellik ve iyileştirme içeriyor.</h2>     
-                    <a href="haber1.html" class="button">Devamını Oku</a>
-                
-                </div>
-            </div>
-            
-          
-          <div class="card" id="haber2">
-                <img src="tuxsec.png" width="300" height="300">
-                <div class="container">
-                    <h1 style="text-align:left">Linux Kullanıcıları İçin Yeni Güvenlik Güncellemeleri</h1>
-                    <h2 style="text-align:left">Sistem güvenliğini artırmak için Linux dağıtımlarına yönelik yeni güncellemeler yayınlandı.</h2>
-                    <a href="haber2.html" class="button">Devamını Oku</a>
-                </div>
-            </div>
-                    
-        <footer>
-        <div class="container">
-            <p>&copy; 2024 Linux Meraklısı By Necat</p>
-        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Linux Meraklısı By Necat.</p>
     </footer>
 </body>
 
